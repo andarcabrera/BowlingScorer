@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C93C9141CD10857008BFAA8 /* frameViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93C9131CD10857008BFAA8 /* frameViewCelll.swift */; };
+		8C93C9161CD245D5008BFAA8 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93C9151CD245D5008BFAA8 /* ViewControllerTest.swift */; };
+		8C93C9181CD2A0AA008BFAA8 /* frameViewCelllTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93C9171CD2A0AA008BFAA8 /* frameViewCelllTest.swift */; };
 		8CDAFC821CBAE2A40081F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAFC811CBAE2A40081F8D2 /* AppDelegate.swift */; };
 		8CDAFC841CBAE2A40081F8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAFC831CBAE2A40081F8D2 /* ViewController.swift */; };
 		8CDAFC871CBAE2A40081F8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDAFC851CBAE2A40081F8D2 /* Main.storyboard */; };
 		8CDAFC891CBAE2A40081F8D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDAFC881CBAE2A40081F8D2 /* Images.xcassets */; };
 		8CDAFC8C1CBAE2A40081F8D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CDAFC8A1CBAE2A40081F8D2 /* LaunchScreen.xib */; };
 		8CDAFC981CBAE2A40081F8D2 /* BowlingScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAFC971CBAE2A40081F8D2 /* BowlingScorerTests.swift */; };
+		8CDAFCA21CBBE8C60081F8D2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAFCA11CBBE8C60081F8D2 /* Game.swift */; };
+		8CDAFCA41CBBE8E40081F8D2 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAFCA31CBBE8E40081F8D2 /* GameTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C93C9131CD10857008BFAA8 /* frameViewCelll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = frameViewCelll.swift; path = ../frameViewCelll.swift; sourceTree = "<group>"; };
+		8C93C9151CD245D5008BFAA8 /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		8C93C9171CD2A0AA008BFAA8 /* frameViewCelllTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = frameViewCelllTest.swift; sourceTree = "<group>"; };
 		8CDAFC7C1CBAE2A40081F8D2 /* BowlingScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowlingScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDAFC801CBAE2A40081F8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDAFC811CBAE2A40081F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,8 @@
 		8CDAFC911CBAE2A40081F8D2 /* BowlingScorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingScorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDAFC961CBAE2A40081F8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDAFC971CBAE2A40081F8D2 /* BowlingScorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingScorerTests.swift; sourceTree = "<group>"; };
+		8CDAFCA11CBBE8C60081F8D2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		8CDAFCA31CBBE8E40081F8D2 /* GameTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +87,10 @@
 		8CDAFC7E1CBAE2A40081F8D2 /* BowlingScorer */ = {
 			isa = PBXGroup;
 			children = (
-				8CDAFC811CBAE2A40081F8D2 /* AppDelegate.swift */,
 				8CDAFC831CBAE2A40081F8D2 /* ViewController.swift */,
+				8C93C9131CD10857008BFAA8 /* frameViewCelll.swift */,
 				8CDAFC851CBAE2A40081F8D2 /* Main.storyboard */,
-				8CDAFC881CBAE2A40081F8D2 /* Images.xcassets */,
-				8CDAFC8A1CBAE2A40081F8D2 /* LaunchScreen.xib */,
+				8CDAFCA11CBBE8C60081F8D2 /* Game.swift */,
 				8CDAFC7F1CBAE2A40081F8D2 /* Supporting Files */,
 			);
 			path = BowlingScorer;
@@ -90,6 +99,9 @@
 		8CDAFC7F1CBAE2A40081F8D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CDAFC811CBAE2A40081F8D2 /* AppDelegate.swift */,
+				8CDAFC881CBAE2A40081F8D2 /* Images.xcassets */,
+				8CDAFC8A1CBAE2A40081F8D2 /* LaunchScreen.xib */,
 				8CDAFC801CBAE2A40081F8D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -99,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				8CDAFC971CBAE2A40081F8D2 /* BowlingScorerTests.swift */,
+				8CDAFCA31CBBE8E40081F8D2 /* GameTest.swift */,
+				8C93C9151CD245D5008BFAA8 /* ViewControllerTest.swift */,
 				8CDAFC951CBAE2A40081F8D2 /* Supporting Files */,
+				8C93C9171CD2A0AA008BFAA8 /* frameViewCelllTest.swift */,
 			);
 			path = BowlingScorerTests;
 			sourceTree = "<group>";
@@ -156,11 +171,14 @@
 		8CDAFC741CBAE2A40081F8D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Anda Cabrera";
 				TargetAttributes = {
 					8CDAFC7B1CBAE2A40081F8D2 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = V8P8TFYBWX;
 					};
 					8CDAFC901CBAE2A40081F8D2 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -213,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDAFC841CBAE2A40081F8D2 /* ViewController.swift in Sources */,
+				8C93C9141CD10857008BFAA8 /* frameViewCelll.swift in Sources */,
+				8CDAFCA21CBBE8C60081F8D2 /* Game.swift in Sources */,
 				8CDAFC821CBAE2A40081F8D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDAFC981CBAE2A40081F8D2 /* BowlingScorerTests.swift in Sources */,
+				8C93C9181CD2A0AA008BFAA8 /* frameViewCelllTest.swift in Sources */,
+				8CDAFCA41CBBE8E40081F8D2 /* GameTest.swift in Sources */,
+				8C93C9161CD245D5008BFAA8 /* ViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +299,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,9 +366,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BowlingScorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.anda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +380,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BowlingScorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.anda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -372,6 +404,7 @@
 				);
 				INFOPLIST_FILE = BowlingScorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.anda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BowlingScorer.app/BowlingScorer";
 			};
@@ -387,6 +420,7 @@
 				);
 				INFOPLIST_FILE = BowlingScorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.anda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BowlingScorer.app/BowlingScorer";
 			};
@@ -411,6 +445,7 @@
 				8CDAFC9D1CBAE2A40081F8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CDAFC9E1CBAE2A40081F8D2 /* Build configuration list for PBXNativeTarget "BowlingScorerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +454,7 @@
 				8CDAFCA01CBAE2A40081F8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
