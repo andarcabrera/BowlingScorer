@@ -15,7 +15,7 @@ public class Game : NSObject {
     private var frame = 1
     private var scorePerFrames = Dictionary<Int, Array<Int>>()
     private var firstBallInFrame = true
-    
+
     public func roll(pins: Int) {
         rolls[currentRoll] = pins
         updateFrameScores()
@@ -29,19 +29,19 @@ public class Game : NSObject {
             frame += 1
         }
     }
-    
+
     public func rollGutter() {
         roll(0)
     }
-    
+
     public func rollSpare() {
         roll(10 - previousRoll())
     }
-    
+
     public func rollStrike() {
         roll(10)
     }
-    
+
     public func score() -> Int {
         var rollScore = 0
         var keepScore = 0
@@ -59,7 +59,7 @@ public class Game : NSObject {
         }
         return keepScore
     }
-    
+
     public func maxPinsPerRoll()-> Int {
         if firstBallInFrame == true {
             return 10
@@ -67,7 +67,7 @@ public class Game : NSObject {
             return 10 - previousRoll()
         }
     }
-    
+
     public func newGame() {
         currentRoll = 0
         rolls = [Int](count: 22, repeatedValue: 0)
@@ -76,7 +76,7 @@ public class Game : NSObject {
         scorePerFrames = Dictionary<Int, Array<Int>>()
         frame = 1
     }
-    
+
     public func gameOver() -> Bool {
         if  currentRoll + strikes == 24 && isStrike(currentRoll - 3) {
             return true
@@ -90,11 +90,11 @@ public class Game : NSObject {
             return false
         }
     }
-    
+
     public func getScorePerFrames() -> Dictionary<Int, Array<Int>> {
         return scorePerFrames
     }
-    
+
     public func getScorePerFrame(frame: Int) -> Array<Int> {
         var scoreDetail = [0, 0, 0]
         if let frameScoreDetail = scorePerFrames[frame] {
@@ -102,36 +102,36 @@ public class Game : NSObject {
         }
         return scoreDetail
     }
-    
+
     public func getFirstBallInFrame() -> Bool {
         return firstBallInFrame
     }
-    
+
     private func frameScore(activeRoll: Int) -> Int {
         return rolls[activeRoll] + rolls[activeRoll + 1]
     }
-    
+
     private func spareBonus(activeRoll: Int) -> Int {
         return 10 + rolls[activeRoll + 2]
     }
-    
+
     private func strikeBonus(activeRoll: Int) -> Int {
         return 10 + rolls[activeRoll + 1] + rolls[activeRoll + 2]
     }
-    
+
     private func isStrike(activeRoll: Int) -> Bool {
 
         return rolls[activeRoll] == 10
     }
-    
+
     private func isSpare(activeRoll: Int) -> Bool {
         return rolls[activeRoll] + rolls[activeRoll + 1] == 10
     }
-    
+
     private func previousRoll() -> Int {
         return rolls[currentRoll - 1]
     }
-    
+
     private func updateFrameScores() {
         var frameScore = getScorePerFrame(frame)
         if firstBallInFrame == true {
